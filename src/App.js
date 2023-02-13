@@ -5,6 +5,8 @@
 import React from 'react'
 import Navbar from './components/Navbar';
 import Announcement from './components/Announcement';
+import Slider
+ from './components/Slider';
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <div className="App">
         <Announcement/>
         <Navbar />
+        <Slider/>
 
     </div>
   );
