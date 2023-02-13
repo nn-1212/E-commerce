@@ -9,10 +9,24 @@ const Container = styled.div`
     position: relative;
 `
 
+const Wrapper = styled.div`
+    height: 100%;
+`
+
+const SlideContainer = styled.div`
+
+`
+
+const ImgContainer = styled.div`
+
+`
+
+const InfoContainer = styled.div`
+`
+
 const Arrow = styled.div`
     width: 50px;
     height: 50px;
-    background-color: chocolate;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -27,6 +41,8 @@ const Arrow = styled.div`
     right:${(props)=>{
        return (props.direction === "right" && "10px")
     }};
+    cursor: pointer;
+    opacity: 0.5;
 `
 
 
@@ -36,6 +52,9 @@ const Slider = () => {
       <Arrow direction="left">
         <ArrowBackIosNewOutlined/>
       </Arrow>
+        <Wrapper>
+
+        </Wrapper>
        <Arrow direction="right">
         <ArrowForwardIosOutlined/>
        </Arrow> 
