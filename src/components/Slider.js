@@ -53,6 +53,10 @@ const Slider = () => {
         <ArrowBackIosNewOutlined/>
       </Arrow>
         <Wrapper>
+            <SlideContainer>
+                <ImgContainer></ImgContainer>
+                <ImgContainer></ImgContainer>
+            </SlideContainer>
 
         </Wrapper>
        <Arrow direction="right">
