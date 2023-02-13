@@ -14,15 +14,32 @@ const Wrapper = styled.div`
 `
 
 const SlideContainer = styled.div`
-
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 `
 
 const ImgContainer = styled.div`
+    flex: 1;
+    height: 100%;
+    background-color: blanchedalmond;
+`
 
+const Img = styled.div`
+    height: 80%;
 `
 
 const InfoContainer = styled.div`
+    flex: 1; 
 `
+
+const Title = styled.h1``
+const Desc = styled.p``
+const Button = styled.button``
+
+
+
 
 const Arrow = styled.div`
     width: 50px;
@@ -52,13 +69,18 @@ const Slider = () => {
       <Arrow direction="left">
         <ArrowBackIosNewOutlined/>
       </Arrow>
-        <Wrapper>
-            <SlideContainer>
-                <ImgContainer></ImgContainer>
-                <ImgContainer></ImgContainer>
-            </SlideContainer>
-
-        </Wrapper>
+        <Wrapper>    
+            <SlideContainer>    
+                <ImgContainer>
+                    <Img src="https://images.unsplash.com/photo-1675953881447-84b86660f0e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"/>
+                </ImgContainer>
+                  <InfoContainer>
+                    <Title>SUNMMER SALE</Title>
+                    <Desc>夏日大折扣 上衣3折起、下身5折起</Desc>
+                    <Button>SHOP NOW</Button>
+                  </InfoContainer>
+            </SlideContainer>  
+       </Wrapper>
        <Arrow direction="right">
         <ArrowForwardIosOutlined/>
        </Arrow> 
