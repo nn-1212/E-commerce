@@ -9,6 +9,7 @@ import Slider from './components/Slider';
 import Shop from './components/Shop';
 import Products from './components/Products';
 import Newsletter from './components/Newsletter';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Shop/>
         <Products/>
         <Newsletter/>
-
+        <Footer/>
     </div>
   );
 }
