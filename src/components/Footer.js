@@ -8,6 +8,7 @@ const Container = styled.div`
 `
 const Left = styled.div`
     flex: 1;
+    margin-left: 5px;
 `
 const Center = styled.div`
     flex: 1;
@@ -45,7 +46,7 @@ const SocialIcon = styled.div`
     justify-content: center;
     color: white;
     border-radius: 50%;
-    /* background-color: #${(props) => {return props.color}} */
+    background-color: #${(props) => {return props.color}}
     
 `
 
