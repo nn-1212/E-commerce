@@ -3,22 +3,6 @@ import styled from '@emotion/styled'
 import { ShoppingCartOutlined,FavoriteBorderOutlined } from '@mui/icons-material'
 
 
-const Container = styled.div`
-    flex:1;
-    margin: 5px;
-    height: 500px;
-    min-width: 280px;
-    position: relative;
-`
-
-const Img = styled.img`
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-    
-
-`
- 
 const Info = styled.div`  
     width: 100%;
     height: 100%;
@@ -28,18 +12,29 @@ const Info = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-     
-    
+
+    opacity: 0;  
 `
 
-// const Circle = styled.div`
-//     background-color: white;
-//     border-radius: 50%;
-//     padding: 10px;
-//     margin: 10px;
-//     opacity:0.7;
-//     cursor: pointer;
-// `
+const Container = styled.div`
+    flex:1;
+    margin: 5px;
+    height: 500px;
+    min-width: 280px;
+    position: relative;
+
+    &:hover ${Info} {
+        opacity: 1;
+    }
+`
+
+const Img = styled.img`
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    
+
+`
 
 const Icon = styled.div`
     color: gray;
@@ -55,6 +50,13 @@ const Icon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:hover{
+        background-color: white;
+        transform: scale(1.1);
+        transition: all 0.5s;
+
+    }
 
 `
 
