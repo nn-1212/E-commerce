@@ -8,6 +8,7 @@ import Announcement from './components/Announcement';
 import Slider from './components/Slider';
 import Shop from './components/Shop';
 import Products from './components/Products';
+import Newsletter from './components/Newsletter';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Slider/>
         <Shop/>
         <Products/>
+        <Newsletter/>
 
     </div>
   );
