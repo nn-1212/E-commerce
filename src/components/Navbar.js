@@ -81,9 +81,6 @@ const MenuItem = styled.div`
 
 export default function Navbar() {
   return (
-    
-    <div>  
-
      <Container>
         <Wrapper>
             <Left>
@@ -109,9 +106,5 @@ export default function Navbar() {
             </Right>
         </Wrapper>
      </Container>
-
-     
-      
-    </div>
   )
 }
