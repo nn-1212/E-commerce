@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import styled from '@emotion/styled'
 import { ArrowBackIosNewOutlined,ArrowForwardIosOutlined } from '@mui/icons-material';
 import { handleBreakpoints } from '@mui/system';
+import { sliderIndexItem } from './SlideData';
+
 
 const Container = styled.div`
     width: 100%;
@@ -97,27 +99,19 @@ const Slider = () => {
         <ArrowBackIosNewOutlined/>
       </Arrow>
         <Wrapper>    
-            <SlideContainer bg="f5fafd">    
+            {sliderIndexItem.map((item)=>{
+                return (<SlideContainer bg={item.bg}>    
                 <ImgContainer>
-                    <Img src="https://images.unsplash.com/photo-1675953881447-84b86660f0e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"/>
+                    <Img src={item.img}/>
                 </ImgContainer>
                   <InfoContainer>
-                    <Title>SUNMMER SALE</Title>
-                    <Desc>夏日大折扣 上衣3折起、下身5折起</Desc>
+                    <Title>{item.title}</Title>
+                    <Desc>{item.desc}</Desc>
                     <Button>SHOP NOW</Button>
                   </InfoContainer>
-            </SlideContainer>  
-
-            <SlideContainer bg="fcf1ed">    
-                <ImgContainer>
-                    <Img src="https://images.unsplash.com/photo-1675953881447-84b86660f0e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"/>
-                </ImgContainer>
-                  <InfoContainer>
-                    <Title>SUNMMER SALE</Title>
-                    <Desc>夏日大折扣 上衣3折起、下身5折起</Desc>
-                    <Button>SHOP NOW</Button>
-                  </InfoContainer>
-            </SlideContainer>
+            </SlideContainer>  )
+            })}
+            
        </Wrapper>
        <Arrow direction="right" onclick={handleClick}>
         <ArrowForwardIosOutlined/>
