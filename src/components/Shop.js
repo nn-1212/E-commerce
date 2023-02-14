@@ -6,6 +6,7 @@ import ShopItem from './ShopItem'
 
 const Container = styled.div`
     display: flex;
+    padding: 20px;
 `
 
 
