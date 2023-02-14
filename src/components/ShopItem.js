@@ -29,11 +29,14 @@ const Info = styled.div`
 `
 
 const Title = styled.h1`
-
+    color: white;
 `
 
 const Button = styled.button`
-    
+    opacity: 0.7;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 `
 
 const ShopItem = (props) => {

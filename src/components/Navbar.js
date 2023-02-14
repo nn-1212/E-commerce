@@ -10,8 +10,11 @@ import Badge from '@mui/material/Badge';
 
 
 const Container = styled.div`
-    height: 75px;
-    background-color: green;
+    height: 70px;
+    /* background-color: green; */
+    
+    
+    
 
 `
 const Wrapper = styled.div`
@@ -105,10 +108,6 @@ export default function Navbar() {
                     </MenuItem>       
             </Right>
         </Wrapper>
-            
-        
-
-
      </Container>
 
      
