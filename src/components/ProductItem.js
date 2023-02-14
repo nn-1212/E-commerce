@@ -24,7 +24,8 @@ const Container = styled.div`
     position: relative;
 
     &:hover {
-        
+        opacity: 0.7;
+        transition: 0.3s;
 
     }
 `
