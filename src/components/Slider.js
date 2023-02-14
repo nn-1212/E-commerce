@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from '@emotion/styled'
 import { ArrowBackIosNewOutlined,ArrowForwardIosOutlined } from '@mui/icons-material';
-import { sliderIndexItem } from './SlideData';
+import { sliderIndexItem } from '../data/SlideData';
 
 
 const Container = styled.div`
@@ -16,6 +16,7 @@ const Wrapper = styled.div`
     height: 100%;
     display: flex;
     transform: translateX(${(props)=> props.slideIndex * -100}vw);
+    transition: all 1.5s ;
     
 `
 
@@ -30,11 +31,12 @@ const SlideContainer = styled.div`
 const ImgContainer = styled.div`
     flex: 1;
     height: 100%;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
 `
 
-const Img = styled.div`
-    height: 80%;
+const Img = styled.img`
+    height: 100%;
+    width: 80%;
 `
 
 const InfoContainer = styled.div`
@@ -97,7 +99,7 @@ const Slider = () => {
 
   return (
     <Container>
-      <Arrow direction="left" onclick={()=>handleClick("left")}>
+      <Arrow direction="left" onClick={()=>handleClick("left")}>
         <ArrowBackIosNewOutlined/>
       </Arrow>
         <Wrapper slideIndex={slideIndex}>    
@@ -115,7 +117,7 @@ const Slider = () => {
                 </SlideContainer>  )
             )}           
         </Wrapper>
-      <Arrow direction="right" onclick={()=>handleClick("right")}>
+      <Arrow direction="right" onClick={()=>handleClick("right")}>
         <ArrowForwardIosOutlined/>
       </Arrow> 
     </Container>
