@@ -11,10 +11,7 @@ import Badge from '@mui/material/Badge';
 
 const Container = styled.div`
     height: 70px;
-    /* background-color: green; */
-    
-    
-    
+    /* background-color: green; */   
 
 `
 const Wrapper = styled.div`
@@ -22,9 +19,6 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-
-
 `
 
 const Left = styled.div`
@@ -88,8 +82,7 @@ export default function Navbar() {
                 <SearchContainer>
                     <Input />
                     <Search style={{color:"black", fontSize:24}}/>
-                </SearchContainer>
-            
+                </SearchContainer>           
             </Left>
             <Center>
                 <Logo>LAMA.</Logo>

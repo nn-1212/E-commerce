@@ -13,7 +13,7 @@ const Info = styled.div`
     align-items: center;
     justify-content: center;
 
-    opacity: 0;  
+    /* opacity: 0;   */
 `
 
 const Container = styled.div`
@@ -23,17 +23,17 @@ const Container = styled.div`
     min-width: 280px;
     position: relative;
 
-    &:hover ${Info} {
-        opacity: 1;
+    &:hover {
+        
+
     }
 `
+
 
 const Img = styled.img`
     width: 100%;
     height: 90%;
     object-fit: cover;
-    
-
 `
 
 const Icon = styled.div`
