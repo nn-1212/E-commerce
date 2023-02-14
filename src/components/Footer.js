@@ -1,17 +1,26 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import {Facebook, Instagram, Twitter } from '@mui/icons-material'
+import {Facebook, Instagram, Twitter, AddLocationAlt, Phone, Mail } from '@mui/icons-material'
 
 
 const Container = styled.div`
     display: flex;
+    border: 1px solid black;
 `
 const Left = styled.div`
     flex: 1;
 `
 const Center = styled.div`
     flex: 1;
-    padding: 20px;
+    padding-top:0;
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 `
 const Right = styled.div`
     flex: 1;
@@ -37,16 +46,37 @@ const SocialIcon = styled.div`
     justify-content: center;
     color: white;
     border-radius: 50%;
-    background-color: #${(props)=> props.color}
+    background-color: #${(props) => {return props.color}}
     
 `
+
+const Title = styled.h2`
+    margin-bottom:15px;
+    margin-left:-55px ;
+    
+` 
+const ListGroup = styled.ul`
+    margin:0 ;
+    padding: 0;
+    list-style: none;
+    
+`
+const ListItem = styled.li`
+    margin: 10px 0;
+
+`
+
+const Contact = styled.div`
+`
+
+
 
 const Footer = () => {
   return (
     <Container>
         <Left>
             <Logo>LAMA.</Logo>
-            <Desc>hi,Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ipsum ullam ex voluptatem assumenda quae iste quasi tempore, reprehenderit quidem eum mollitia doloremque odit perspiciatis maxime cum magni enim nihil?</Desc>
+            <Desc>hi,Lorem ipsum dolor sit  consectetur, adipisicing elit. At ipsum ullam ex voluptatem assumenda quae iste quasi tempore, reprehenderit quidem eum mollitia doloremque odit perspiciatis maxime cum magni enim nihil?</Desc>
             <SocialContainer>
                 <SocialIcon color="3B5999">
                     <Facebook/>
@@ -59,8 +89,21 @@ const Footer = () => {
                 </SocialIcon>
             </SocialContainer>
         </Left>
-        <Center></Center>
-        <Right></Right>
+        <Center>
+            <Title>Links</Title>
+            <ListGroup>
+                <ListItem>Home</ListItem>
+                <ListItem>Cart</ListItem>
+                <ListItem>My Account</ListItem>
+                <ListItem>Order Wishes</ListItem>
+            </ListGroup>
+        </Center>
+        <Right>
+            <Title>Contact</Title>
+            <Contact><AddLocationAlt/>101 台北市內湖區南港路11111號</Contact>
+            <Contact><Phone/>+86 2 1234 5678</Contact>
+            <Contact><Mail/>contact@lama.dev</Contact>
+        </Right>
     </Container>
   )
 }
