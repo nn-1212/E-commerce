@@ -5,7 +5,6 @@ import {Facebook, Instagram, Twitter, AddLocationAlt, Phone, Mail } from '@mui/i
 
 const Container = styled.div`
     display: flex;
-    border: 1px solid black;
 `
 const Left = styled.div`
     flex: 1;
@@ -24,7 +23,7 @@ const Center = styled.div`
 `
 const Right = styled.div`
     flex: 1;
-    padding: 20px;
+    padding: 0 20px;
 `
 
 const Logo = styled.h1`
@@ -46,12 +45,12 @@ const SocialIcon = styled.div`
     justify-content: center;
     color: white;
     border-radius: 50%;
-    background-color: #${(props) => {return props.color}}
+    /* background-color: #${(props) => {return props.color}} */
     
 `
 
 const Title = styled.h2`
-    margin-bottom:15px;
+    margin-top:0 ;
     margin-left:-55px ;
     
 ` 
@@ -65,10 +64,15 @@ const ListItem = styled.li`
     margin: 10px 0;
 
 `
-
-const Contact = styled.div`
+const Title1 = styled.h2`
+    margin-top: 0;
+    margin-bottom: 15px;
 `
-
+const Contact = styled.div`
+    margin: 10px 0;
+    display: flex;
+    padding: 5px 0;
+`
 
 
 const Footer = () => {
@@ -99,10 +103,10 @@ const Footer = () => {
             </ListGroup>
         </Center>
         <Right>
-            <Title>Contact</Title>
-            <Contact><AddLocationAlt/>101 台北市內湖區南港路11111號</Contact>
-            <Contact><Phone/>+86 2 1234 5678</Contact>
-            <Contact><Mail/>contact@lama.dev</Contact>
+            <Title1>Contact</Title1>
+            <Contact><AddLocationAlt style={{marginRight:"5px"}}/>101 台北市內湖區南港路11111號</Contact>
+            <Contact><Phone style={{marginRight:"5px"}}/>+86 2 1234 5678</Contact>
+            <Contact><Mail style={{marginRight:"5px"}}/>contact@lama.dev</Contact>
         </Right>
     </Container>
   )
