@@ -6,6 +6,7 @@ import Announcement from './components/Announcement'
 import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 
+import { Remove, Add } from '@mui/icons-material'
 
 const Container = styled.div`
     padding: 20px;
@@ -29,9 +30,9 @@ const TopButton = styled.button`
     font-weight: 500;
     cursor: pointer; 
 
-    /* border: ${(props)=> props.type === 'filled' && "none"};
+    border: ${(props)=> props.type === 'filled' && "none"};
     background-color: ${(props)=> props.type === 'filled' && "black"};
-    color: ${(props)=> props.type === 'filled' && "white"}  */
+    color: ${(props)=> props.type === 'filled' && "white"} 
 
     
     
@@ -79,17 +80,35 @@ const ProductColor = styled.div`
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    border: 1px solid black;
+    background-color:${(props)=> props.color} ;
 `
 const ProductSize = styled.span``
 
 
 const ProductPrice = styled.div`
-    flex:1
+    flex:1;
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
 `
+
+const AmountContainer = styled.div`
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+`
+const Amount = styled.div`
+    margin: 10px;
+`
+const TotalPrice = styled.div``
+
 
 const Summary = styled.div`
     flex:1;
 `
+
+const Hr = styled.hr``
 
 const Cart = () => {
   return (
@@ -114,11 +133,38 @@ const Cart = () => {
                         <Detail>
                             <ProductName><b>產品名稱:</b>白色澎洋裝</ProductName>
                             <ProductID><b>產品編號:</b>99991999</ProductID>
-                            <ProductColor><b>顏色:</b></ProductColor>
+                            <ProductColor color="white"></ProductColor>
                             <ProductSize><b>尺寸:</b>S</ProductSize>
                         </Detail>
                     </ProductDetail>
-                    <ProductPrice><b>價錢:</b>1800</ProductPrice>
+                    <ProductPrice>
+                        <AmountContainer>
+                            <Remove/>
+                            <Amount>2</Amount>
+                            <Add/>
+                        </AmountContainer>
+                        <TotalPrice>TWD 3600</TotalPrice>
+                    </ProductPrice>
+                </Product>
+                <Hr/>
+                <Product>
+                    <ProductDetail>
+                        <Img src="https://images.unsplash.com/photo-1674478969244-a8bbf5e06624?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fFM0TUtMQXNCQjc0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"/>
+                        <Detail>
+                            <ProductName><b>產品名稱:</b>粉紅泡泡外套</ProductName>
+                            <ProductID><b>產品編號:</b>99991998</ProductID>
+                            <ProductColor color="pink"></ProductColor>
+                            <ProductSize><b>尺寸:</b>M</ProductSize>
+                        </Detail>
+                    </ProductDetail>
+                    <ProductPrice>
+                        <AmountContainer>
+                            <Remove/>
+                            <Amount>1</Amount>
+                            <Add/>
+                        </AmountContainer>
+                        <TotalPrice>TWD 2200</TotalPrice>
+                    </ProductPrice>
                 </Product>
             </Info>
             <Summary>summary</Summary>
