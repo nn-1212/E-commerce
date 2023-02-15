@@ -44,19 +44,52 @@ const Text = styled.span`
     margin: 0 10px;
 `
 
-const Bottom = styled.div``
+const Bottom = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+`
 
-const Info = styled.div``
-const Product = styled.div``
-const ProductDetail = styled.div``
-const Img = styled.img``
-const Detail = styled.div``
-const ProductName = styled.div``
-const ProductID = styled.div``
-const ProductColor = styled.div``
-const ProductSize = styled.div``
+const Info = styled.div`
+    flex:3;
+`
+const Product = styled.div`
+    display: flex;
+    justify-content: space-between;
+`
+const ProductDetail = styled.div`
+    display: flex;
+    flex:2;
+`
+const Img = styled.img`
+    width: 100px;
+    height: 150px;
+`
+const Detail = styled.div`
+    padding:20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+   
+`
+const ProductName = styled.span``
+const ProductID = styled.span``
+const ProductColor = styled.div`
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+`
+const ProductSize = styled.span``
 
-const Summary = styled.div``
+
+const ProductPrice = styled.div`
+    flex:1
+`
+
+const Summary = styled.div`
+    flex:1;
+`
 
 const Cart = () => {
   return (
@@ -79,16 +112,16 @@ const Cart = () => {
                     <ProductDetail>
                         <Img src="https://images.unsplash.com/photo-1674822876913-c717477e98eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fFM0TUtMQXNCQjc0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"/>
                         <Detail>
-                            <ProductName>白色澎洋裝</ProductName>
-                            <ProductID><b>產品編號:</b></ProductID>
+                            <ProductName><b>產品名稱:</b>白色澎洋裝</ProductName>
+                            <ProductID><b>產品編號:</b>99991999</ProductID>
                             <ProductColor><b>顏色:</b></ProductColor>
-                            <ProductSize><b>尺寸:</b></ProductSize>
+                            <ProductSize><b>尺寸:</b>S</ProductSize>
                         </Detail>
                     </ProductDetail>
+                    <ProductPrice><b>價錢:</b>1800</ProductPrice>
                 </Product>
             </Info>
-            <Summary></Summary>
-
+            <Summary>summary</Summary>
         </Bottom>
       </Wrapper>
       <Newsletter/>
