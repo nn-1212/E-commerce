@@ -106,15 +106,35 @@ const TotalPrice = styled.div``
 
 const Summary = styled.div`
     flex:1;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    height:50vh;
 `
 
-const SummaryTitle =styled.h1``
-const SummaryItem =styled.div``
-const SummuryText =styled.span``
-const SummuryPrice =styled.span``
-const SummaryButton =styled.button``
+const SummaryTitle =styled.h1`
+    font-weight: 300;
+`
+const SummaryItem =styled.div`
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: ${(props)=> props.total === "total" && "24px"};
+    font-weight: ${(props)=> props.total === "total" && "500"};
+`
+const SummaryText =styled.span``
+const SummaryPrice =styled.span``
+const SummaryButton =styled.button`
+    width: 100%;
+    padding:10px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+`
 
-const Hr = styled.hr``
+const Hr = styled.hr`
+    margin: 20px 20px 20px 0px;
+`
 
 const Cart = () => { 
   return (
@@ -176,22 +196,22 @@ const Cart = () => {
             <Summary>
                 <SummaryTitle>YOUR ORDER</SummaryTitle>
                 <SummaryItem>
-                    <SummuryText> 小計</SummuryText>
-                    <SummuryPrice>TWD 5800</SummuryPrice>
+                    <SummaryText> 小計</SummaryText>
+                    <SummaryPrice>TWD 5800</SummaryPrice>
                 </SummaryItem>
                 <SummaryItem>
-                    <SummuryText>運費</SummuryText>
-                    <SummuryPrice>TWD 180</SummuryPrice>
+                    <SummaryText>運費</SummaryText>
+                    <SummaryPrice>TWD 180</SummaryPrice>
                 </SummaryItem>
                 <SummaryItem>
-                    <SummuryText>運費折扣</SummuryText>
-                    <SummuryPrice>TWD 180</SummuryPrice>
+                    <SummaryText>運費折扣</SummaryText>
+                    <SummaryPrice>TWD 180</SummaryPrice>
                 </SummaryItem>
-                <SummaryItem>
-                    <SummuryText>合計</SummuryText>
-                    <SummuryPrice>TWD 5800</SummuryPrice>
+                <SummaryItem total="total">
+                    <SummaryText>合計</SummaryText>
+                    <SummaryPrice>TWD 5800</SummaryPrice>
                 </SummaryItem>
-                <SummuryButton>結帳</ㄋButton>
+                <SummaryButton>結帳</SummaryButton>
             </Summary>
         </Bottom>
       </Wrapper>
