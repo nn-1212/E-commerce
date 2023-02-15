@@ -6,6 +6,7 @@ import Announcement from './components/Announcement'
 import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 
+import { Remove, Add } from '@mui/icons-material'
 
 const Container = styled.div`
 
@@ -28,12 +29,19 @@ const InfoContainer = styled.div`
     flex: 1;
     padding: 0 50px;
 `
-const Title = styled.h1``
+const Title = styled.h1`
+    margin-top: 0;
+`
 const Desc = styled.p``
-const Price = styled.span``
+const Price = styled.span`
+    font-weight: 300;
+    font-size: 30px;
+`
 
 
-const FilterContainer = styled.div``
+const FilterContainer = styled.div`
+    margin: 20px 0;
+`
 const Filter = styled.div`
     display: flex;
     width: 140px;
@@ -42,7 +50,8 @@ const Filter = styled.div`
     margin-top: 5px;
 `
 const FilterText = styled.p`
-    margin-right: 5px;
+    margin-right: 10px;
+    font-size: 15px;
 `
 
 const Color = styled.div`
@@ -51,14 +60,50 @@ const Color = styled.div`
     background-color: ${(props)=> props.color};
     border-radius: 50%;
     margin: 5px;
+    cursor: pointer;
 `
 
 const Select = styled.select`
     width: 80px;
-    height: 20px;
+    height: 25px;
 `
 const Option = styled.option`
+    
 `
+const AmountContainer = styled.div`
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+` 
+const Count = styled.div`
+    display: flex;
+` 
+const Amount = styled.div` 
+    border: 1px solid black;
+    width: 80px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+
+` 
+const Button = styled.button`
+    background-color: white;
+    border: 3px solid teal;
+    padding : 10px;
+    cursor: pointer;
+    font-weight: 500;
+
+    &:hover {
+        background-color: teal;
+    }
+
+    
+` 
+
 
 const ProductInfo = () => {
   return (
@@ -91,6 +136,14 @@ const ProductInfo = () => {
                     </Select>
                 </Filter>
             </FilterContainer>
+            <AmountContainer>
+                <Count>
+                    <Remove/>
+                    <Amount>1</Amount>
+                    <Add/>
+                </Count>
+                <Button>加入購物車</Button>
+            </AmountContainer>
         </InfoContainer>
       </Wrapper>
       <Newsletter/>
