@@ -6,13 +6,15 @@ import reportWebVitals from './reportWebVitals';
 
 import ProductList from './ProductList';
 import ProductInfo from './ProductInfo';
+import Register from './Register';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <ProductList/> */}
-    <ProductInfo/>
+    {/* <ProductInfo/> */}
+    <Register/>
   </React.StrictMode>
 );
 
