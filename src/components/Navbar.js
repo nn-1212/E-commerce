@@ -91,7 +91,7 @@ export default function Navbar() {
                 </SearchContainer>           
             </Left>
             <Center>
-                <Logo>LAMA.</Logo>
+                <Logo>FIT YOURS.</Logo>
 
             </Center>
             <Right>

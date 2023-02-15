@@ -108,8 +108,8 @@ const Button = styled.button`
 const ProductInfo = () => {
   return (
     <Container>
-      <Announcement/>
       <Navbar/>
+      <Announcement/>
       <Wrapper>
         <ImgContainer>
             <Img src="https://images.unsplash.com/photo-1675332911384-b55fc27f54ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4MDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"/>

@@ -14,9 +14,13 @@ const Wrapper = styled.div`
     width: 40%;
     padding: 20px;
     background-color: white;  
-   
-    
 `
+const Logo = styled.h1`
+    display: flex;
+    justify-content: center;
+`
+    
+
 const Title = styled.h1`
     font-size: 25px;
     display: flex;
@@ -54,9 +58,11 @@ const Button = styled.button`
     padding: 10px 15px;
     margin: 10px;
     cursor: pointer;
+    
 
     &:hover{
         background-color: teal;
+        transition: 0.2s;
     }
 
 `
@@ -68,6 +74,7 @@ const Register = () => {
   return (
     <Container>
       <Wrapper>
+        <Logo>FIT YOURS.</Logo>
         <Title>CREATE AN ACCOUNT</Title>
         <Form>
             <Input placeholder="姓名"/>

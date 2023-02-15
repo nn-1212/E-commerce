@@ -30,9 +30,9 @@ const TopButton = styled.button`
     font-weight: 500;
     cursor: pointer; 
 
-    /* border: ${(props)=> props.type === 'filled' && "none"};
+    border: ${(props)=> props.type === 'filled' && "none"};
     background-color: ${(props)=> props.type === 'filled' && "black"};
-    color: ${(props)=> props.type === 'filled' && "white"}  */
+    color: ${(props)=> props.type === 'filled' && "white"} 
 
     
     
@@ -130,6 +130,7 @@ const SummaryButton =styled.button`
     background-color: black;
     color: white;
     font-weight: 500;
+    cursor: pointer;
 `
 
 const Hr = styled.hr`

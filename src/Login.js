@@ -14,10 +14,13 @@ const Container = styled.div`
 const Wrapper = styled.div`
     width: 40%;
     padding: 20px;
-    background-color: white;  
-   
-    
+    background-color: white;   
 `
+const Logo = styled.h1`
+    display: flex;
+    justify-content: center;
+`
+
 const Title = styled.h1`
     font-size: 25px;
     display: flex;
@@ -65,6 +68,7 @@ const Button = styled.button`
 
     &:hover{
         background-color: teal;
+        transition: 0.2s;
     }
 
 `
@@ -75,6 +79,7 @@ const Login = () => {
   return (
     <Container>
         <Wrapper>
+        <Logo>FIT YOURS.</Logo>
         <Title>SIGN IN</Title>
         <Form>
             <Input placeholder="email"/>
