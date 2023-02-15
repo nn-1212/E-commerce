@@ -140,8 +140,8 @@ const Hr = styled.hr`
 const Cart = () => { 
   return (
     <Container>
-      <Announcement/>
       <Navbar/>
+      <Announcement/>
       <Wrapper>
         <Title>購物車</Title>
         <TOP>

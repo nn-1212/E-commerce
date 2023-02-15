@@ -10,6 +10,14 @@ const Container = styled.div`
     justify-content: center;
     font-size: 14px;
     margin-top: 25px;
+
+    @media screen and (max-width: 390px){
+        /* width: 100%; */
+        height: 40px;
+        margin-top: 55px;
+        padding: 10px;
+        text-align: center ;
+      }
 `
 
 

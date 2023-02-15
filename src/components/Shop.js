@@ -7,6 +7,11 @@ import ShopItem from './ShopItem'
 const Container = styled.div`
     display: flex;
     padding: 20px;
+
+    @media screen and (max-width: 390px){
+        display: block;
+        padding: 0;
+    }
 `
 
 

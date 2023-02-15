@@ -13,12 +13,12 @@ import Cart from './Cart';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     {/* <ProductList/> */}
     {/* <ProductInfo/> */}
     {/* <Register/> */}
     {/* <Login/> */}
-    <Cart/>
+    {/* <Cart/> */}
   </React.StrictMode>
 );
 

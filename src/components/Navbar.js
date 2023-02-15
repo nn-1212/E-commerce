@@ -5,13 +5,15 @@ import styled from '@emotion/styled'
 // import SearchIcon from '@mui/icons-material/Search';
 import { Search, ShoppingCartOutlined } from '@mui/icons-material';
 import Badge from '@mui/material/Badge';
-
-
+// import { MEDIA_QUERY_SM, MEDIA_QUERY_MD} from '../responsive'
 
 
 const Container = styled.div`
     height: 60px;
-    /* background-color: green; */   
+    
+    @media screen and (max-width: 390px){
+        
+    }
 
 `
 const Wrapper = styled.div`
@@ -19,7 +21,6 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: aqua; */
 `
 
 const Left = styled.div`
@@ -31,6 +32,10 @@ const Left = styled.div`
 
 const SearchBar = styled.div`
     font-weight: 200;
+
+    @media screen and (max-width: 390px){
+        display: none;
+    }
 
 `
 
@@ -49,6 +54,10 @@ const Input = styled.input`
     margin: 5px;
     height: 20px;
 
+    @media screen and (max-width: 390px){
+        width: 20px;
+    }
+
 `
 
 const Center = styled.div`
@@ -60,6 +69,9 @@ const Center = styled.div`
 const Logo = styled.h1`
     font-weight: bold;
     
+    @media screen and (max-width: 390px){
+        
+    }
 `
 
 
@@ -69,12 +81,23 @@ const Right = styled.div`
     align-items: center;
     justify-content: flex-end;
 
+    @media screen and (max-width: 390px){
+        display: flex;
+        flex-direction: column;
+        
+    }
+
 `
 
 const MenuItem = styled.div`
     font-size: 14px; 
     cursor: pointer; 
     margin: 10px;
+
+    @media screen and (max-width: 390px){
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
 `
 
 
@@ -101,7 +124,7 @@ export default function Navbar() {
                     <Badge badgeContent={4} color="primary">
                         <ShoppingCartOutlined color="action" />
                     </Badge>
-                    </MenuItem>       
+                </MenuItem>       
             </Right>
         </Wrapper>
      </Container>
