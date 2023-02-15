@@ -30,9 +30,9 @@ const TopButton = styled.button`
     font-weight: 500;
     cursor: pointer; 
 
-    border: ${(props)=> props.type === 'filled' && "none"};
+    /* border: ${(props)=> props.type === 'filled' && "none"};
     background-color: ${(props)=> props.type === 'filled' && "black"};
-    color: ${(props)=> props.type === 'filled' && "white"} 
+    color: ${(props)=> props.type === 'filled' && "white"}  */
 
     
     
@@ -108,9 +108,15 @@ const Summary = styled.div`
     flex:1;
 `
 
+const SummaryTitle =styled.h1``
+const SummaryItem =styled.div``
+const SummuryText =styled.span``
+const SummuryPrice =styled.span``
+const SummaryButton =styled.button``
+
 const Hr = styled.hr``
 
-const Cart = () => {
+const Cart = () => { 
   return (
     <Container>
       <Announcement/>
@@ -167,7 +173,26 @@ const Cart = () => {
                     </ProductPrice>
                 </Product>
             </Info>
-            <Summary>summary</Summary>
+            <Summary>
+                <SummaryTitle>YOUR ORDER</SummaryTitle>
+                <SummaryItem>
+                    <SummuryText> 小計</SummuryText>
+                    <SummuryPrice>TWD 5800</SummuryPrice>
+                </SummaryItem>
+                <SummaryItem>
+                    <SummuryText>運費</SummuryText>
+                    <SummuryPrice>TWD 180</SummuryPrice>
+                </SummaryItem>
+                <SummaryItem>
+                    <SummuryText>運費折扣</SummuryText>
+                    <SummuryPrice>TWD 180</SummuryPrice>
+                </SummaryItem>
+                <SummaryItem>
+                    <SummuryText>合計</SummuryText>
+                    <SummuryPrice>TWD 5800</SummuryPrice>
+                </SummaryItem>
+                <SummuryButton>結帳</ㄋButton>
+            </Summary>
         </Bottom>
       </Wrapper>
       <Newsletter/>
@@ -177,3 +202,4 @@ const Cart = () => {
 }
 
 export default Cart
+
