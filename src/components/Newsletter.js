@@ -4,7 +4,6 @@ import SendIcon from '@mui/icons-material/Send';
 
 const Container = styled.div`
     height: 40vh;
-    border-top:1px solid grey;
     display: flex;
     align-items: center;
     justify-content: center;

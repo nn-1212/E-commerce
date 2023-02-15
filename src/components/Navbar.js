@@ -3,14 +3,14 @@ import styled from '@emotion/styled'
 // import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
 
 // import SearchIcon from '@mui/icons-material/Search';
-import { Language, Search, ShoppingCartOutlined } from '@mui/icons-material';
+import { Search, ShoppingCartOutlined } from '@mui/icons-material';
 import Badge from '@mui/material/Badge';
 
 
 
 
 const Container = styled.div`
-    height: 70px;
+    height: 60px;
     /* background-color: green; */   
 
 `
@@ -19,6 +19,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color: aqua; */
 `
 
 const Left = styled.div`
@@ -28,8 +29,13 @@ const Left = styled.div`
     cursor: pointer;
 `
 
+const SearchBar = styled.div`
+    font-weight: 200;
+
+`
+
 const SearchContainer = styled.div`
-    ${'' /* border: 0.5px solid gray;  */}
+    border: 0.5px solid gray;
     display: flex;  
     align-items: center; 
     margin: 5px;
@@ -41,7 +47,7 @@ const SearchContainer = styled.div`
 const Input = styled.input`
     border:none;
     margin: 5px;
-    height: 23px;
+    height: 20px;
 
 `
 
@@ -78,7 +84,7 @@ export default function Navbar() {
      <Container>
         <Wrapper>
             <Left>
-                <Language>EN</Language>
+                <SearchBar>搜尋</SearchBar>
                 <SearchContainer>
                     <Input />
                     <Search style={{color:"black", fontSize:24}}/>
