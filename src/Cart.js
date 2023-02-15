@@ -29,9 +29,9 @@ const TopButton = styled.button`
     font-weight: 500;
     cursor: pointer; 
 
-    border: ${(props)=> props.type === 'filled' && "none"};
+    /* border: ${(props)=> props.type === 'filled' && "none"};
     background-color: ${(props)=> props.type === 'filled' && "black"};
-    color: ${(props)=> props.type === 'filled' && "white"} 
+    color: ${(props)=> props.type === 'filled' && "white"}  */
 
     
     
@@ -45,6 +45,18 @@ const Text = styled.span`
 `
 
 const Bottom = styled.div``
+
+const Info = styled.div``
+const Product = styled.div``
+const ProductDetail = styled.div``
+const Img = styled.img``
+const Detail = styled.div``
+const ProductName = styled.div``
+const ProductID = styled.div``
+const ProductColor = styled.div``
+const ProductSize = styled.div``
+
+const Summary = styled.div``
 
 const Cart = () => {
   return (
@@ -61,7 +73,23 @@ const Cart = () => {
             </TopText>
             <TopButton type="filled">結帳</TopButton>
         </TOP>
-        <Bottom></Bottom>
+        <Bottom>
+            <Info>
+                <Product>
+                    <ProductDetail>
+                        <Img src="https://images.unsplash.com/photo-1674822876913-c717477e98eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fFM0TUtMQXNCQjc0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"/>
+                        <Detail>
+                            <ProductName>白色澎洋裝</ProductName>
+                            <ProductID><b>產品編號:</b></ProductID>
+                            <ProductColor><b>顏色:</b></ProductColor>
+                            <ProductSize><b>尺寸:</b></ProductSize>
+                        </Detail>
+                    </ProductDetail>
+                </Product>
+            </Info>
+            <Summary></Summary>
+
+        </Bottom>
       </Wrapper>
       <Newsletter/>
       <Footer/>
