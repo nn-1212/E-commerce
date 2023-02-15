@@ -8,9 +8,6 @@ const Container = styled.div`
    height: 70vh;
    position: relative;
 
-   @media screen and (max-width: 390px){
-        display: block;
-    }
 `
 const Img = styled.img`
     width: 100%;
