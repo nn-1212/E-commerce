@@ -56,7 +56,7 @@ const Button = styled.button`
     cursor: pointer;
 
     &:hover{
-        background-color: ;
+        background-color: teal;
     }
 
 `
