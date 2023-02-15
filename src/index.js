@@ -8,6 +8,7 @@ import ProductList from './ProductList';
 import ProductInfo from './ProductInfo';
 import Register from './Register';
 import Login from './Login'
+import Cart from './Cart';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +17,8 @@ root.render(
     {/* <ProductList/> */}
     {/* <ProductInfo/> */}
     {/* <Register/> */}
-    <Login/>
+    {/* <Login/> */}
+    <Cart/>
   </React.StrictMode>
 );
 
