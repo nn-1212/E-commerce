@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import ProductList from './ProductList';
 import ProductInfo from './ProductInfo';
 import Register from './Register';
+import Login from './Login'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +15,8 @@ root.render(
     {/* <App /> */}
     {/* <ProductList/> */}
     {/* <ProductInfo/> */}
-    <Register/>
+    {/* <Register/> */}
+    <Login/>
   </React.StrictMode>
 );
 

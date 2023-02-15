@@ -7,8 +7,8 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("https://images.unsplash.com/photo-1675767528183-628d7e46ae59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3MzJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
-    object-fit: cover;
+    background: url("https://images.unsplash.com/photo-1672585437394-97bb55665dad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8aG1lbnZRaFVteE18fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60");
+    background-size: cover;
 `
 const Wrapper = styled.div`
     width: 40%;
@@ -43,7 +43,7 @@ const Agreement = styled.span`
     margin: 5px 0;
 `
 
-const ButtonContailner = styled.div`
+const ButtonContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
@@ -79,9 +79,9 @@ const Register = () => {
                 新增帳號前，再次確認<b>隱私政策</b>
             </Agreement>
         </Form>
-        <ButtonContailner>
+        <ButtonContainer>
         <Button>送出</Button>
-        </ButtonContailner>
+        </ButtonContainer>
         
       </Wrapper>
     </Container>
