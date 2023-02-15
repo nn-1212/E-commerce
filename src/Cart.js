@@ -26,14 +26,14 @@ const TOP = styled.div`
 const TopButton = styled.button`
     padding: 15px 30px ;
     font-size: 15px;
-    font-weight: 400;
-    /* background-color: white; */
-    /* border: 1px solid black; */
-    cursor: pointer;
+    font-weight: 500;
+    cursor: pointer; 
 
     border: ${(props)=> props.type === 'filled' && "none"};
     background-color: ${(props)=> props.type === 'filled' && "black"};
-    color: ${(props)=> props.type === 'filled' && "white"}
+    color: ${(props)=> props.type === 'filled' && "white"} 
+
+    
     
 `
 const TopText = styled.div`
