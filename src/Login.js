@@ -40,8 +40,15 @@ const Input = styled.input`
 
 ` 
 const Agreement = styled.span`
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+`
+
+const Link = styled.a`
     font-size: 12px;
     margin: 5px 0;
+    cursor: pointer;
 `
 
 const ButtonContainer = styled.div`
@@ -74,7 +81,8 @@ const Login = () => {
             <Input placeholder="密碼"/>
             <Input placeholder="再次確認密碼"/>
             <Agreement>
-                
+                <Link>忘記密碼</Link>
+                <Link>新增帳號</Link>
             </Agreement>
         </Form>
         <ButtonContainer>
