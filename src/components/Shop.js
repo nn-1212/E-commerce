@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
-import {shopData} from '../data/shopData'
+import {shopData} from '../data/ShopData.js'
 import ShopItem from './ShopItem'
 
 const Container = styled.div`

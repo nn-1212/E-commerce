@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from '@emotion/styled'
 import { ArrowBackIosNewOutlined,ArrowForwardIosOutlined } from '@mui/icons-material';
-import { sliderIndexItem } from '../data/slideData';
+import { sliderIndexItem } from '../data/SlideData';
 
 
 const Container = styled.div`
