@@ -15,10 +15,10 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <ProductList/> */}
-    <ProductInfo/>
+    {/* <ProductInfo/> */}
     {/* <Register/> */}
     {/* <Login/> */}
-    {/* <Cart/> */}
+    <Cart/>
   </React.StrictMode>
 );
 

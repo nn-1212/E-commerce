@@ -32,31 +32,50 @@ const TopButton = styled.button`
 
     border: ${(props)=> props.type === 'filled' && "none"};
     background-color: ${(props)=> props.type === 'filled' && "black"};
-    color: ${(props)=> props.type === 'filled' && "white"} 
+    color: ${(props)=> props.type === 'filled' && "white"} ;
 
-    
-    
+    @media screen and (max-width: 890px){
+        display: ${(props)=> props.type === 'filled' && "none"};
+        background-color: ${(props)=> props.type === 'filled' && "none"}
+    }    
 `
 const TopText = styled.div`
     text-decoration: underline;
+
+    @media screen and (max-width: 890px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
 `
 
 const Text = styled.span`
     margin: 0 10px;
+
+    @media screen and (max-width: 890px){
+       padding: 5px 0;
+    }
 `
 
 const Bottom = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+
+    @media screen and (max-width: 890px){
+        display: block;
+    }
 `
 
 const Info = styled.div`
     flex:3;
+
 `
 const Product = styled.div`
     display: flex;
     justify-content: space-between;
+
 `
 const ProductDetail = styled.div`
     display: flex;
@@ -71,6 +90,11 @@ const Detail = styled.div`
     display: flex;
     flex-direction: column;
     justify-content:space-around;
+
+    @media screen and (max-width: 890px){
+        padding:0 10px 0 10px;
+
+    }
     
    
 `
@@ -91,6 +115,11 @@ const ProductPrice = styled.div`
     display: flex;
     justify-content:flex-start ;
     align-items: center;
+
+    @media screen and (max-width: 890px){
+        display: block;
+        padding: 30px 40px 30px;
+    }
 `
 
 const AmountContainer = styled.div`
@@ -108,8 +137,15 @@ const Summary = styled.div`
     flex:1;
     border: 0.5px solid lightgray;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px 20px;
     height:50vh;
+
+    @media screen and (max-width: 890px){
+        width: 90%;
+        margin: 25px 0 0 5px;
+        padding-bottom: 0;
+        height: 450px;
+    }
 `
 
 const SummaryTitle =styled.h1`
@@ -131,6 +167,11 @@ const SummaryButton =styled.button`
     color: white;
     font-weight: 500;
     cursor: pointer;
+
+    @media screen and (max-width: 890px){
+        margin-top: 15px;
+    }
+    
 `
 
 const Hr = styled.hr`

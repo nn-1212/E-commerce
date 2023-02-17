@@ -31,6 +31,9 @@ const InputContainer = styled.div`
     justify-content: space-between;
     border: 1px solid gray ;
 
+    @media screen and (max-width: 890px){
+        width: 60%;
+    }
 `
 
 const Input = styled.input`
@@ -43,6 +46,7 @@ const Button = styled.button`
     flex: 1;
     border: none;
     background-color: lightgrey;
+
 `
 
 

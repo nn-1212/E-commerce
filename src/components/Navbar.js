@@ -11,13 +11,9 @@ import Badge from '@mui/material/Badge';
 const Container = styled.div`
     height: 60px;
     
-    @media screen and (max-width: 390px){
-        
-    }
-
 `
 const Wrapper = styled.div`
-    padding: 10px 20px;
+    padding:  0 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +29,7 @@ const Left = styled.div`
 const SearchBar = styled.div`
     font-weight: 200;
 
-    @media screen and (max-width: 390px){
+    @media screen and (max-width: 890px){
         display: none;
     }
 
@@ -54,7 +50,7 @@ const Input = styled.input`
     margin: 5px;
     height: 20px;
 
-    @media screen and (max-width: 390px){
+    @media screen and (max-width: 890px){
         width: 20px;
     }
 
@@ -69,7 +65,7 @@ const Center = styled.div`
 const Logo = styled.h1`
     font-weight: bold;
     
-    @media screen and (max-width: 390px){
+    @media screen and (max-width: 890px){
         
     }
 `
@@ -81,12 +77,14 @@ const Right = styled.div`
     align-items: center;
     justify-content: flex-end;
 
-    @media screen and (max-width: 390px){
-        display: flex;
-        flex-direction: column;
-        
+    @media screen and (max-width: 890px){
+        display: flex;        
     }
 
+`
+
+const Menu = styled.div`
+    margin-right: 5px;
 `
 
 const MenuItem = styled.div`
@@ -94,12 +92,14 @@ const MenuItem = styled.div`
     cursor: pointer; 
     margin: 10px;
 
-    @media screen and (max-width: 390px){
+    @media screen and (max-width: 890px){
         margin-bottom: 5px;
         margin-top: 0;
     }
 `
+const MenuCart = styled.div`
 
+`
 
 
 export default function Navbar() {
@@ -118,13 +118,15 @@ export default function Navbar() {
 
             </Center>
             <Right>
-                <MenuItem>註冊</MenuItem>
-                <MenuItem>登入</MenuItem>
-                <MenuItem>
+                <Menu>
+                    <MenuItem>註冊</MenuItem>
+                    <MenuItem>登入</MenuItem>
+                </Menu>
+                <MenuCart>
                     <Badge badgeContent={4} color="primary">
                         <ShoppingCartOutlined color="action" />
                     </Badge>
-                </MenuItem>       
+                </MenuCart>       
             </Right>
         </Wrapper>
      </Container>

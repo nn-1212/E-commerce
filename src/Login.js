@@ -15,6 +15,10 @@ const Wrapper = styled.div`
     width: 40%;
     padding: 20px;
     background-color: white;   
+
+    @media screen and (max-width: 890px){
+        width: 75%;
+    }
 `
 const Logo = styled.h1`
     display: flex;
