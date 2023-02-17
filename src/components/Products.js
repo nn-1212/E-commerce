@@ -7,6 +7,10 @@ const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+
+    @media screen and (max-width: 890px){
+        padding: 0;
+    }
 `
 
 const Products = () => {

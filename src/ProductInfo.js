@@ -15,19 +15,38 @@ const Container = styled.div`
 const Wrapper = styled.div`
     display: flex;
     padding: 50px;
+
+    @media screen and (max-width: 890px){
+        display: block;
+        padding: 10px;
+    }
     
 `
 const ImgContainer = styled.div`
     flex: 1;
+
+
+    @media screen and (max-width: 890px){
+        margin-bottom: 20px;
+    }
+
 `
 const Img = styled.img`
     width: 100%;
     height: 90vh;
     object-fit: cover;
+
+    @media screen and (max-width: 890px){
+        height: 60vh;
+    }
 `
 const InfoContainer = styled.div`
     flex: 1;
     padding: 0 50px;
+
+    @media screen and (max-width: 890px){
+        padding: 10px;
+    }
 `
 const Title = styled.h1`
     margin-top: 0;
@@ -48,6 +67,7 @@ const Filter = styled.div`
     height: 40px;
     align-items: center;
     margin-top: 5px;
+    
 `
 const FilterText = styled.p`
     margin-right: 10px;
@@ -66,16 +86,24 @@ const Color = styled.div`
 const Select = styled.select`
     width: 80px;
     height: 25px;
+
+    @media screen and (max-width: 890px){
+        
+    }
 `
 const Option = styled.option`
     
 `
 const AmountContainer = styled.div`
-    width: 50%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+
+    @media screen and (max-width: 890px){
+        width: 80%;
+    }
 ` 
 const Count = styled.div`
     display: flex;
@@ -101,7 +129,6 @@ const Button = styled.button`
         background-color: teal;
     }
 
-    
 ` 
 
 

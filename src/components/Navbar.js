@@ -107,7 +107,7 @@ export default function Navbar() {
      <Container>
         <Wrapper>
             <Left>
-                <SearchBar>搜尋</SearchBar>
+                <SearchBar placeholder='搜尋'>搜尋</SearchBar>
                 <SearchContainer>
                     <Input />
                     <Search style={{color:"black", fontSize:24}}/>

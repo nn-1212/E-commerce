@@ -10,6 +10,10 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+
+    @media screen and (max-width: 890px){
+        display: none;
+    }
 `
 
 const Wrapper = styled.div`
@@ -31,7 +35,6 @@ const SlideContainer = styled.div`
 const ImgContainer = styled.div`
     flex: 1;
     height: 100%;
-    /* background-color: blanchedalmond; */
 `
 
 const Img = styled.img`

@@ -5,10 +5,18 @@ import {Facebook, Instagram, Twitter, AddLocationAlt, Phone, Mail } from '@mui/i
 
 const Container = styled.div`
     display: flex;
+
+    @media screen and (max-width: 890px){
+        margin-top: 20px;
+    }
 `
 const Left = styled.div`
     flex: 1;
     margin-left: 5px;
+
+    @media screen and (max-width: 890px){
+        display: none;
+    }
 `
 const Center = styled.div`
     flex: 1;
@@ -20,6 +28,10 @@ const Center = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 890px){
+        padding: 0;
+    }
 
 `
 const Right = styled.div`
@@ -53,6 +65,10 @@ const SocialIcon = styled.div`
 const Title = styled.h2`
     margin-top:0 ;
     margin-left:-55px ;
+
+    @media screen and (max-width: 890px){
+        padding-left:10px ;
+    }
     
 ` 
 const ListGroup = styled.ul`
@@ -63,7 +79,6 @@ const ListGroup = styled.ul`
 `
 const ListItem = styled.li`
     margin: 10px 0;
-
 `
 const Title1 = styled.h2`
     margin-top: 0;

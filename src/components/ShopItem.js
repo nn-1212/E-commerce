@@ -8,12 +8,16 @@ const Container = styled.div`
    height: 70vh;
    position: relative;
 
+   @media screen and (max-width: 820px){
+        height: 30vh;
+    }
+
 `
 const Img = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+     
 `
 
 const Info = styled.div`
